@@ -1,0 +1,15 @@
+# env files
+.env*
+!.env.dev
+!.env.prod
+.env.prod.db
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# docker / misc
+*.log
+.DS_Store

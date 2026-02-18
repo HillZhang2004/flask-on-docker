@@ -1,0 +1,19 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-dev:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build dev stack (if compose present)
+        run: |
+          if [ -f docker-compose.yml ] || [ -f docker-compose.yaml ]; then
+            docker compose build
+          else
+            echo "No docker-compose.yml yet; skipping build for now."
+          fi
