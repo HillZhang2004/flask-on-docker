@@ -1,3 +1,4 @@
+![Build and Test Dev Environment](https://github.com/HillZhang2004/flask-on-docker-advanced/actions/workflows/ci.yml/badge.svg?branch=main)
 # Dockerized Flask Web App
 
 A minimal Flask application containerized with Docker. Built by following the archived Runnable.com tutorial (Wayback Machine) and adapted for the lambda server by mapping the container’s port 5000 to a user-specific host port (`$UID`) to avoid conflicts.
